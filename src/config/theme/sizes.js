@@ -1,0 +1,5 @@
+import { Dimensions } from "react-native";
+
+const { width, height } = Dimensions.get('screen');
+export const deviceSize = { width, height };
+export const sizes = ["8px", "16px", "32px", "64px", "128px"];

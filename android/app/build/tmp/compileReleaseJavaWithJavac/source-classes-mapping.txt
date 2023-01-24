@@ -1,0 +1,9 @@
+com/ebookingham/rn/BuildConfig.java
+ com.ebookingham.rn.BuildConfig
+com/bookingcore/rn/MainActivity.java
+ com.ebookingham.rn.MainActivity
+com/bookingcore/rn/MainApplication.java
+ com.ebookingham.rn.MainApplication
+ com.ebookingham.rn.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

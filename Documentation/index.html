@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="application landing page">
+    <title>eBookingham Mobile App Documentation</title>
+    <link href="https://ebookingham/uploads/0000/30/2021/09/27/logo-icon.svg" rel="icon">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <style>
+        li, p {
+            line-height: 3rem;
+        }
+    </style>
+</head>
+
+<body class="side-header">
+    <div class="wrapper clearfix">
+        <header id="navbar-spy" class="header header-fixed-side header-fixed-dark bg-dark">
+            <div class="header--panel">
+                <nav id="primary-menu" class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <div class="header--panel-logo">
+                                <a class="logo" href="index.html">
+                                    <img class="logo-dark" src="assets/images/logo/logo-light.png" alt="sea n sand">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse header--panel-links" id="navbar-collapse-1">
+                            <ul class="nav nav-stacked hidden-xs hidden-sm affix-top">
+                                <li class="text-white text-uppercase">Before Start</li>
+                                <li><a href="#intro">introduction</a></li>
+                                <li><a href="#requirement">Requirement</a></li>
+                                <li><a href="#file-s">Project Structure</a></li>
+                                <li><a href="#install">Installation</a></li>
+                                <li><a href="#issue">Issues</a></li>
+                                <li><a href="#faq">FAQs</a></li>
+                                <li><a href="#build">Build and Publish your app</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+
+        <div id="page" class="page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="headline">eBookingham Mobile App Documentation</h2>
+                        <p class="lead">Introduction to run and build mobile app for Android and IOS</p>
+                    </div>
+                </div>
+            </div>
+            <section class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="intro" class="col-md-12 content">
+                            <div class="col-md-12">
+                                <h4 class="subhead">Introduction</h4>
+                                <p>Thank you for purchasing eBookingham Mobile App. This documentation will help to know more about mobile app, how is structured, how to config, how to run and how to build app .</p>
+                                <p>eBookingham Mobile App is a template built on
+                                    <code>React Native</code>
+                                </p>
+                            </div>
+
+                            <div id="requirement" class="col-md-12">
+                                <h4 class="subhead">Requirements</h4>
+                                <p>To be able to use project, you must have the following:</p>
+                                <ul>
+                                    <li>Make sure you have installed the environment for React Native. Step install please see <a href="https://reactnative.dev/docs/0.63/environment-setup">here</a></li>
+                                    <li>To run and build IOS app, you can only use MacOS</li>
+                                </ul>
+                            </div>
+                            <div id="structure"></div>
+                            <div id="file-s" class="col-md-12">
+                                <h4 class="subhead">Project Structure</h4>
+                                <p>unzip the compressed archive to see the following structure:</p>
+                                <pre class="prettyprint"> booking-core-mobile-app/
+                        <span class="muted">├──</span> __tests__
+                        <span class="muted">├──</span> android/
+                        <span class="muted">├──</span> assets/
+                        <span class="muted">├──</span> docs/
+                        <span class="muted">├──</span> ios/
+                        <span class="muted">├──</span> node_modules/
+                        <span class="muted">├──</span> src/
+                            <span class="muted">├──</span> assets/
+                            <span class="muted">├──</span> components/
+                                <span class="muted">├──</span> baseComponent/
+                                <span class="muted">├──</span> screenComponent/
+                            <span class="muted">├──</span> config/
+                            <span class="muted">├──</span> connection/
+                            <span class="muted">├──</span> helper/
+                            <span class="muted">├──</span> navigation/
+                            <span class="muted">├──</span> redux/
+                            <span class="muted">├──</span> screens/
+                        <span class="muted">├──</span> App.js
+                        <span class="muted">├──</span> env.example
+                        <span class="muted">├──</span> index.js
+                        <span class="muted">├──</span> react-native.config.js
+                        <span class="muted">├──</span> package.json
+                        <span class="muted">├──</span> package-lock.json
+                        <span class="muted">├──</span> metro.config.js
+                        <span class="muted">├──</span> babel.config.js
+                        <span class="muted">├──</span> app.json
+                        <span class="muted">├──</span> README.md
+                        <span class="muted">├──</span> CHANGELOG.md
+                        <span class="muted">├──</span> yarn.lock
+                                </pre>
+
+                            </div>
+                            <div id="install" class="col-md-12">
+                                <h4 class="subhead">Installation</h4>
+                                <p>Follow the steps below to get started with your eBookingham Mobile App source code:</p>
+                                <ol>
+                                    <li>Create the file with name <code>.env</code> in root directory with content like file <code>env.example</code></li>
+                                    <pre>APP_NAME=name_your_app //It will display in some position in your app <br/>BASE_DOMAIN=your_domain<br/>IS_DEBUG=false // if true, you will see log and api when run in debug mode. Default false<br/>PUSH_NOTIFICATION_KEY='92e18f1c-70a5-4751-98e6-95e80ff4806e'// You don't need to change. This Key will use in next app version
+                                    </pre>
+                                    <li>After create <code>.env</code> and fill your information. Need install dependencies and library by run this command</li>
+                                    <pre>npm -f install</pre>
+                                    <li>After installed dependencies and library successfully. Let start Metro, run </li>
+                                    <pre>npm start -- --reset-cache</pre>
+                                    <li>Let Metro Bundler run in its own terminal. Open a new terminal inside your React Native project folder. Run the following: </li>
+                                    <ul>
+                                    <li>For Android</li>
+                                    <pre>npx react-native run-android</pre>
+                                    <div class="alert alert-info" style="margin-top: 10px;">
+                                        <b>NOTE:</b> Make sure you installed simulator or connected real device <br>
+                                    </div>
+                                    <li>For IOS, in root directory of project</li>
+                                    <pre>cd ios && pod install && cd .. && npx react-native run-ios</pre>
+                                    <div class="alert alert-info" style="margin-top: 10px;">
+                                        <b>NOTE:</b> Make sure you installed simulator or connected real device <br>
+                                    </div>
+                                    </ul>
+                                </ol>
+                            </div>
+
+                            <div id="issue" class="col-md-12">
+                                <h4 class="subhead">Issues</h4>
+                                <p>When start running or building your app, you may be get some issues</p>
+                                <h3><strong>1. Error 'Multiple commands produce...'</strong></h3>
+                                    <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                        <img src="./assets/images/multiple_command_error.png" alt="" style="width: 800px;height: 400px;">
+                                    </div>
+                                <h4><strong>Solution:</strong></h4>
+                                    <ol>
+                                    <li>In top left of Xcode, select <code>Show the Project navigator</code> and select file name of project (e.g: eBookingham)</li>
+                                    <li>In middle bar of Xcode, select <code>Build Phase</code> > <code>Copy Bundle Resources</code></li>
+                                    <li>Delete 16 fonts generated by react-native-vector-icons (photo under). Make sure delete only 16 fonts</li>
+                                    <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                        <img src="./assets/images/multiple_command.jpeg" alt="" style="width: 80%;height: 80%;">
+                                    </div>
+                                </ol>
+
+                                <h3><strong>2. Warning 'Require cycle: node_modules/rn-fetch-blob/index.js...'</strong></h3>
+                                    <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                        <img src="./assets/images/require_cycle.png" alt="" style="width: 100%;height: 350px;">
+                                    </div>
+                                    <p>This warning appears automatically when run project in dev mode, it is warning from library rn-fetch-blob and it will always appear after you run command 'npm install', to fix it, follow this:</p>
+                                <h4><strong>Solution:</strong></h4>
+                                    <ol>
+                                    <li>Go to <code>{project_name}/node_modules/rn-fetch-blob/polyfill</code></li>
+                                    <li>In top of 3 file: <code>Blob.js, Fetch.js, XMLHttpRequest.js</code> replace line:</li>
+                                    <pre>import RNFetchBlob from '../index.js'</pre>
+                                    <span>to</span>
+                                    <pre>import {NativeModules} from 'react-native';<br/>const RNFetchBlob = NativeModules.RNFetchBlob</pre>
+                                </ol>
+
+                                <h3><strong>3. Duplicate resource when build apk after run bundle command</strong></h3>
+                                    <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                        <img src="./assets/images/duplicate_resource_error.png" alt="" style="width: 800px;height: 350px;">
+                                    </div>
+                                    <p>This error auto generate when you run command react-native-bundle....</p>
+                                <h4><strong>Solution:</strong></h4>
+                                    <ol>
+                                    <li>Open file in this directory: <code>{project_name}/node_modules/react-native/react.gradle</code></li>
+                                    <li>In line 143 (after doFirst{}), add this command bellow doFirst{}</li>
+                                    <pre>doLast {
+    def moveFunc = { resSuffix ->
+    File originalDir = file("$buildDir/generated/res/react/release/${resSuffix}");
+    if (originalDir.exists()) {
+    File destDir = file("$buildDir/../src/main/res/${resSuffix}");
+    ant.move(file: originalDir, tofile: destDir);
+    }
+    }
+    moveFunc.curry("drawable-ldpi").call()
+    moveFunc.curry("drawable-mdpi").call()
+    moveFunc.curry("drawable-hdpi").call()
+    moveFunc.curry("drawable-xhdpi").call()
+    moveFunc.curry("drawable-xxhdpi").call()
+    moveFunc.curry("drawable-xxxhdpi").call()
+    moveFunc.curry("raw").call()
+}</pre>
+                                    <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                        <img src="./assets/images/duplicate_resource.png" alt="" style="width: 80%;height: 80%;">
+                                    </div>
+                                </ol>
+                            </div>
+                            <div id="faq" class="col-md-12">
+                                <h4 class="subhead">FAQs</h4>
+                                <h3><strong>1. How to add new language in mobile app?</strong></h3>
+                                <ol>
+                                    <li>Find file in the directory <code>src/config/languages/index.js</code></li>
+                                    <li>To add new language, duplicate any section in file and translate content in inverted comma </li>
+                                    <span><strong>Ex</strong>: Add new language like: <code>Arabic</code>. Follow this step: </span>
+                                    <ol>
+                                        <li>Go to admin dashboard of your website. Open <code>Tools > Languages</code></li>
+                                        <li>See column <code>Locale</code> in right panel and make sure new language added in mobile app have a key in this column. In this case, i will choose key is <code>ar</code></li>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/view_key_language.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+                                        <li>Return the mobile app project, after choose key language. I will collapse content and duplicate new section from <code>en</code> </li>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/duplicate_section.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+                                        <li>After duplicate, change key of this language from <code>en</code> to <code>ar</code></li>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/change_section.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+                                        <li>Start translate content of each key in new section <code>ar</code></li>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/translate_content.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+
+                                        <div class="alert alert-info" style="margin-top: 10px;">
+                                            <b>NOTE:</b> In each section, we have key is: <code>isRtl</code>. If your language support and require <code>Right to left</code> layout. Please change value of this key from <code>false</code> to <code>true</code><br>
+                                        </div>
+                                    </ol>
+                                    
+                                </ol>
+
+
+                                <h3><strong>2. How to change icon inside splash screen?</strong></h3>
+                                <ol>
+                                    <li>In directory <code>src/assets/image</code>, replace 3 files <code>app.png, icon_app.png, logo.png</code> with your icon (make sure you use same name and file extension with old file)</li>
+                                    <li>Open project in Terminal, run this command this root directory of project: npx react-native generate-bootsplash src/assets/image/app.png --background-color=FFFFFF</li>
+                                    <div class="alert alert-info" style="margin-top: 10px;">
+                                        <b>NOTE: You can change color with option --background-color=your_color_lor. See more option <a href="https://github.com/zoontek/react-native-bootsplash">here</a></b>
+                                    </div>
+                                </ol>
+
+                                <h3><strong>3. How to change display name when install in real device or simulator?</strong></h3>
+                                <ol>
+                                    <li>Android</li>
+                                    <ol>
+                                        <li>Open file <code>android/app/src/main/res/values/string.xml</code> and change value inside tag <code>string</code> </li>
+                                        <span>Ex: Change <code>eBookingham</code> to <code>Your App Name</code> </span>
+                                    </ol>
+                                    <li>IOS</li>
+                                    <ol>
+                                        <span>Follow under photo</span>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/change_display_name.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+                                    </ol>
+                                </ol>
+
+                                <h3><strong>4. How to change bundle id?</strong></h3>
+                                <ol>
+                                    <li>In root directory, run this command:</li>
+                                    <pre>npx react-native-rename <i>Your_App_Name</i> -b <i>your_bundle_id</i></pre>
+                                    <span>Ex: <code>npx react-native-rename 'eBookingham' -b com.ebookingham.rn</code></span>
+                                </ol>
+
+                                <h3><strong>5. How to change icon app?</strong></h3>
+                                <ol>
+                                    <li>Go to <a href="https://makeappicon.com/">https://makeappicon.com/</a> and create icon to build app from your icon</li>
+                                    <li>After done and downloaded your icon, see</li>
+                                    <li>Android</li>
+                                    <ol>
+                                        <li>Require Android Studio, if you don't have it. Please download and install</li>
+                                        <li>After have Android Studio, open it and choose 'Open an Existing Project'</li>
+                                        <li>Popup select project appear, please select location of your project and select open folder <code>android</code></li>
+                                        <li>After opened and loaded project in Android Studio, select follow under photo</li>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/new_icon_android.png" alt="" style="width: 800px;height: 600px;">
+                                        </div>
+                                        <div style="display: flex;justify-content: flex-start;padding-bottom:30px">
+                                            <img src="./assets/images/new_icon_android_2.png" alt="" style="width: 800px;height: 450px;">
+                                        </div>
+                                    </ol>
+                                    <li>IOS</li>
+                                    <ol>
+                                        <li>unzip file downloaded above</li>
+                                        <li>Replace folder in directory <code>src/ios/{YourAppName}/Images.xcassets/AppIcon.appiconset</code> by folder <code>ios/AppIcon.appiconset</code> inside file downloaded </li>
+                                    </ol>
+                                </ol>
+
+                            </div>
+
+                            <div id="build" class="col-md-12">
+                                <h4 class="subhead">Build and Publish your app</h4>
+                                <h3><strong>1. How to add new language in mobile app?</strong></h3>
+                                
+                            </div>
+
+                    </div>
+                    <a href="#" class="scrollToTop">Top</a>
+            </section>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/prettify.js"></script> 
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>

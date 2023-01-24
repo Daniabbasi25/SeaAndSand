@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBookingham Guide</title>
+<style>
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner {
+        width: '100%';
+        height: 500px;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    .command {
+        padding: 10px 30px 10px 30px;
+        background-color: #dedede;
+    }
+</style>
+</head>
+<body>
+    <h1>eBookingham Mobile App 🚀</h1>
+    <hr/>
+    <p>eBookingham is a Booking System based on Laravel, designed for a travel website, Marketplace, Travel Agency, Tour Operator, Room Bnb, Villa Rental, Resort Rental, Make Travel website.</p>
+    <p>Check out live demo on <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ebookingham.rn">Google Play</a>.</p>
+    <img class="banner" src="./img/banner.png"/>
+
+    <h2>Getting Started</h2>
+    <hr/>
+    <h3>0. Make sure you installed React Native follow official document <a href="https://reactnative.dev/docs/0.63/environment-setup">here</a></h3>
+    <h3>1. Setup your project</h3>
+    <ul>
+        <li>Go to <i>"{project_name}/src/config/appInformation.js"</i></li>
+        <li>Change "<strong>baseDomain</strong>"" to your domain <i>(Don't forget add "/" to the end of your domain)</i></li>
+    </ul>
+    <h3>2. Run your project</h3>
+    In MacOS, open "Terminal" and run this command: 
+    <p class="command">npm install</p>
+    If you get error like this
+    <p class="command">
+        npm ERR! code ERESOLVE<br/>
+        npm ERR! ERESOLVE unable to resolve dependency tree<br/>
+        npm ERR! <br/>
+        npm ERR! While resolving: nexttwin@0.1.0<br/>
+        npm ERR! Found: react@17.0.1<br/>
+        npm ERR! node_modules/react<br/>
+        npm ERR!   react@"17.0.1" from the root project<br/>
+        npm ERR! <br/>
+        npm ERR! Could not resolve dependency:<br/>
+        npm ERR! peer react@"^16.8.0" from react-hook-mousetrap@2.0.4<br/>
+        npm ERR! node_modules/react-hook-mousetrap<br/>
+        npm ERR!   react-hook-mousetrap@"*" from the root project<br/>
+        npm ERR! <br/>
+    </p>
+    <p>Try this command</p>
+    <p class="command">
+        npm install --force
+    </p>
+    <p>Or</p>
+    <p class="command">
+        npm install --save --legacy-peer-deps
+    </p>
+    <hr/>
+    <h4>📱 Running on Android device</h4>
+    <p>Make sure your laptop installed <strong>adb</strong></p>
+    <ul>
+        <li>Connect your physical device and run this command</li>
+        <p class="command">adb devices</p>
+        <p>This command show list id of device connected </p>
+        <li>Run this command to start project</li>
+        <p class="command">react-native run-android</p>
+    </ul>
+    <hr/>
+    <h4>📱 Running on IOS device</h4>
+    <ul>
+        <li>In root project, open "Terminal" and run this command</li>
+        <p class="command">cd ios && pod install</p>
+        <li>Run this command to start project</li>
+        <p class="command">react-native run-ios</p>
+    </ul>
+    <hr/>
+    <h4>📱 Build apk</h4>
+    <ul>
+        <li>Go to <i>"{project_name}/node_modules/react-native/react.gradle"</i></li>
+        <li>In line 143 (after doFirst{}), add this command bellow doFirst{}</li>
+        <li><p class="command">doLast {</br>
+            def moveFunc = { resSuffix -></br>
+            File originalDir = file("$buildDir/generated/res/react/release/${resSuffix}");</br>
+            if (originalDir.exists()) {</br>
+            File destDir = file("$buildDir/../src/main/res/${resSuffix}");</br>
+            ant.move(file: originalDir, tofile: destDir);</br>
+            }</br>
+            }</br>
+            moveFunc.curry("drawable-ldpi").call()</br>
+            moveFunc.curry("drawable-mdpi").call()</br>
+            moveFunc.curry("drawable-hdpi").call()</br>
+            moveFunc.curry("drawable-xhdpi").call()</br>
+            moveFunc.curry("drawable-xxhdpi").call()</br>
+            moveFunc.curry("drawable-xxxhdpi").call()</br>
+            moveFunc.curry("raw").call()</br>
+        }</p></li>
+        <li>To build .apk, run this command in root folder:
+            <p class="command">
+                npm run build-android
+            </p>
+        </li>
+        <li>To build .aab, run this command in root folder:
+            <p class="command">
+                npm run build-android-bundle
+            </p>
+        </li>
+        <li>After build success, you can found apk at: <i>"{project_name}/android/app/build/outputs/apk/release/apk-release.apk"</i></li>
+        <li>And you can found aab at: <i>"{project_name}/android/app/build/outputs/bundle/release/apk-release.aab"</i></li>
+    </ul>
+    <h3>📱 Some Errors When Build or Run Project</h3>
+    <h4>Both Android & IOS</h4>
+    <h5>1. Warning requice cycle appear when run in dev mode</h5>
+    <img src="./img/require_cycle.png"/>
+    <p>This warning appears automatically when run project in dev mode, it is warning from library rn-fetch-blob and it will always appear after you run command 'npm install', to fix it, follow this:</p>
+    <ul>
+        <li>Go to  {project_name}/node_modules/rn-fetch-blob/polyfill</li>
+        <li>In top of 3 file: Blob.js, Fetch.js, XMLHttpRequest.js,<br/> replace line:<br/> <p style="margin:0px;margin-left: 30px">import RNFetchBlob from '../index.js'</p> <br/>with<br/> 
+            <p style="margin:0px;margin-left: 30px">import {NativeModules} from 'react-native';</p><br/>
+        <p style="margin:0px;margin-left: 30px">const RNFetchBlob = NativeModules.RNFetchBlob</p></li>
+    </ul>
+    <h4>Android</h4>
+    <h5>1. Duplicate resource when build apk after run bundle command</h5>
+    <img src="./img/duplicate_resource_error.png"/>
+    <p>This error auto generate when you run command react-native-bundle....</p>
+    <h5>Solution:</h5>
+    <ul>
+        <li>Open file in this directory: {project_name}/node_modules/react-native/react.gradle</li>
+        <li>In line 143 (after doFirst{}), add this command bellow doFirst{}</li>
+        <li><p class="command">doLast {</br>
+            def moveFunc = { resSuffix -></br>
+            File originalDir = file("$buildDir/generated/res/react/release/${resSuffix}");</br>
+            if (originalDir.exists()) {</br>
+            File destDir = file("$buildDir/../src/main/res/${resSuffix}");</br>
+            ant.move(file: originalDir, tofile: destDir);</br>
+            }</br>
+            }</br>
+            moveFunc.curry("drawable-ldpi").call()</br>
+            moveFunc.curry("drawable-mdpi").call()</br>
+            moveFunc.curry("drawable-hdpi").call()</br>
+            moveFunc.curry("drawable-xhdpi").call()</br>
+            moveFunc.curry("drawable-xxhdpi").call()</br>
+            moveFunc.curry("drawable-xxxhdpi").call()</br>
+            moveFunc.curry("raw").call()</br>
+        }</p>
+            <img src="./img/duplicate_resource.png"/>
+        </li>
+    </ul>
+    <h4>IOS</h4>
+    <h5>1. Multiple commands produce</h5>
+    <img src="./img/multiple_command_error.png"/>
+    <p>This error auto generate when you install library react-native-vector-icons</p>
+    <h5>Solution:</h5>
+    <h5>Method 1:</h5>
+    <ul>
+        <li>In Taskbar Xcode, select File > WorkSpace Settings</li>
+        <li>In section "Build System", change "New Build System (Default)" to "Legacy Build System (Deprecated)"</li>
+        <li>Re Run</li>
+    </ul>
+    <h5>Method 2 (Recommend):</h5>
+    <ul>
+        <li>In top left of Xcode, select "Show the Project navigator" and select file name of project (e.g: eBookingham)</li>
+        <li>In middle bar of Xcode, select "Build Phase" > "Copy Bundle Resources"</li>
+        <li>Delete 16 fonts generated by react-native-vector-icons (photo under). Make sure delete only 16 fonts</li>
+        <img src="./img/multiple_command.jpeg"/>
+    </ul>
+</body>
+</html>

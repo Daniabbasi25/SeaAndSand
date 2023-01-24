@@ -1,0 +1,606 @@
+[
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domserializer_node_modules_entities_lib_maps_entities.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domserializer_node_modules_entities_lib_maps_entities.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_hanggliding3.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_hanggliding3.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_event_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_event_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_zocial.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_zocial.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_helicoptertours.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_helicoptertours.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativetoastmessage_src_assets_icons_close.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativetoastmessage_src_assets_icons_close.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_paragliding.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_paragliding.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_boat_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_boat_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_image_first_screen.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_image_first_screen.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_seaactivities.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_seaactivities.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_seaequipment.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_seaequipment.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_antdesign.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_antdesign.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_decode.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_decode.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_feather.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_feather.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativetoastmessage_src_assets_icons_error.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativetoastmessage_src_assets_icons_error.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_characterentitieslegacy_index.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_characterentitieslegacy_index.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_stringifyentities_lib_constant_dangerous.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_stringifyentities_lib_constant_dangerous.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_evilicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_evilicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_indoorskydive.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_indoorskydive.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativetoastmessage_src_assets_icons_success.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativetoastmessage_src_assets_icons_success.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_hotairballoon.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_hotairballoon.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_icon_app.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_icon_app.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_xml.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_xml.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_characterentitieshtml4_index.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_characterentitieshtml4_index.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domserializer_node_modules_entities_lib_maps_xml.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domserializer_node_modules_entities_lib_maps_xml.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_fontawesome.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_thankyou.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_thankyou.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_flight_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_flight_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domutils_node_modules_entities_lib_maps_legacy.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domutils_node_modules_entities_lib_maps_legacy.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_skydiving2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_skydiving2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domutils_node_modules_entities_lib_maps_decode.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domutils_node_modules_entities_lib_maps_decode.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_empty_content.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_empty_content.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_background_second_screen.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_background_second_screen.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_background_first_screen.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_background_first_screen.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativetoastmessage_src_assets_icons_error.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_error.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_appsplash.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_appsplash.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_media.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_media.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_desertactivities.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_desertactivities.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_indoorskydive2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_indoorskydive2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_logo_splash.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_logo_splash.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_bootsplash_logo.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xhdpi\\bootsplash_logo.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_bungeejumping.jpeg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_bungeejumping.jpeg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domutils_node_modules_entities_lib_maps_entities.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domutils_node_modules_entities_lib_maps_entities.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_entypo.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_entypo.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_scenicflight2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_scenicflight2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_legacy.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_legacy.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_helicopter.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_helicopter.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_deserchalet.webp.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_deserchalet.webp"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_bootsplash_logo.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\bootsplash_logo.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_bootsplash_logo.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\bootsplash_logo.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_bootsplash_logo.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-mdpi\\bootsplash_logo.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_send_mail.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_send_mail.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_icon_quote_mark.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_icon_quote_mark.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativetoastmessage_src_assets_icons_success.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_success.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domserializer_node_modules_entities_lib_maps_decode.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domserializer_node_modules_entities_lib_maps_decode.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_car_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_car_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_bootsplash.xml.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable\\bootsplash.xml"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_evilicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_evilicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_network_security_config.xml.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_tour_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_tour_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_ionicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_ionicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_bungeejumping2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_bungeejumping2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_app.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_app.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_skydiving.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_skydiving.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_desertequipmentjpeg.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_desertequipmentjpeg.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_hanggliding.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_hanggliding.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnativetoastmessage_src_assets_icons_info.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnativetoastmessage_src_assets_icons_info.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_code.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_code.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_entypo.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_entypo.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_simplelineicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_simplelineicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativetoastmessage_src_assets_icons_error.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_error.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativetoastmessage_src_assets_icons_info.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_info.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_hotel_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_hotel_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_ionicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_ionicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_header_update.jpeg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_header_update.jpeg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativetoastmessage_src_assets_icons_success.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_success.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_feather.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_feather.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_space_category.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_space_category.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_fontisto.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativevectoricons_glyphmaps_fontisto.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnativetoastmessage_src_assets_icons_close.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_close.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_hangglide.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_hangglide.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_csscolorkeywords_colors.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_csscolorkeywords_colors.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_vendor.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_vendor.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnative_package.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnative_package.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_rbac.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_rbac.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_bootsplash_logo.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-hdpi\\bootsplash_logo.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativetoastmessage_src_assets_icons_info.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_info.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_icon_wavinghand.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_icon_wavinghand.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_receive_mail.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_receive_mail.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnativetoastmessage_src_assets_icons_close.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xhdpi\\node_modules_reactnativetoastmessage_src_assets_icons_close.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domserializer_node_modules_entities_lib_maps_legacy.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domserializer_node_modules_entities_lib_maps_legacy.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_fontawesome.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_fontawesome.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_imagecompress.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_imagecompress.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_octicons.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_octicons.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_docs_img_seachalet.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\docs_img_seachalet.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-hdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_hotairballoon2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_hotairballoon2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_laravel.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_laravel.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_oops.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_oops.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_app.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\app.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_foundation.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_reactnativestarrating_node_modules_reactnativevectoricons_glyphmaps_foundation.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_entities.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_nativehtml_transientrenderengine_node_modules_domserializer_node_modules_entities_lib_maps_entities.json"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_src_assets_image_air_helicopter2.jpg.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\drawable-mdpi\\src_assets_image_air_helicopter2.jpg"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_domutils_node_modules_entities_lib_maps_xml.json.flat",
+        "source": "D:\\ReactNativeProjeccts\\ebookingham\\android\\app\\src\\main\\res\\raw\\node_modules_domutils_node_modules_entities_lib_maps_xml.json"
+    }
+]

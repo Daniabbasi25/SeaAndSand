@@ -1,0 +1,705 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ebookingham.rn"
+4    android:versionCode="11"
+5    android:versionName="1.2.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <!-- Required to access Google Play Licensing -->
+13    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+13-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-73
+13-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:22-70
+14    <!--
+15         Required to keep CPU alive while downloading files
+16        (NOT to keep screen awake)
+17    -->
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:5-68
+18-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:22-65
+19    <!--
+20         Required to poll the state of the network connection
+21        and respond to changes
+22    -->
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+23-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:27:5-79
+23-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:27:22-76
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to read and write the expansion files on shared storage -->
+24-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:30:5-76
+24-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:30:22-73
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+25-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:5-81
+25-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:22-78
+26    <permission
+26-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:7:5-9:47
+27        android:name="com.ebookingham.rn.permission.C2D_MESSAGE"
+27-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:8:9-63
+28        android:protectionLevel="signature" />
+28-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:9:9-44
+29
+30    <uses-permission android:name="com.ebookingham.rn.permission.C2D_MESSAGE" /> <!-- OneSignal SDK has runtime checks Android version. -->
+30-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:11:5-79
+30-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:11:22-76
+31    <!-- <uses-sdk tools:overrideLibrary="android.support.customtabs"/> -->
+32    <!-- Required runtime permission to display notifications on Android 13 -->
+33    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+33-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:16:5-77
+33-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:16:22-74
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:18:5-82
+34-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:18:22-79
+35    <!--
+36 Required so the device vibrates on receiving a push notification.
+37         Vibration settings of the device still apply.
+38    -->
+39    <uses-permission android:name="android.permission.VIBRATE" />
+39-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:24:5-66
+39-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:24:22-63
+40    <!--
+41 Use to restore notifications the user hasn't interacted with.
+42         They could be missed notifications if the user reboots their device if this isn't in place.
+43    -->
+44    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+44-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:30:5-81
+44-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:30:22-78
+45    <!-- Samsung -->
+46    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+46-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:32:5-86
+46-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:32:22-83
+47    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+47-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:33:5-87
+47-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:33:22-84
+48    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+48-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:34:5-81
+48-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:34:22-78
+49    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+49-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:35:5-83
+49-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:35:22-80
+50    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+50-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:36:5-88
+50-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:36:22-85
+51    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+51-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:37:5-92
+51-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:37:22-89
+52    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+52-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:38:5-84
+52-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:38:22-81
+53    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+53-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:39:5-83
+53-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:39:22-80
+54    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+54-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:40:5-91
+54-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:40:22-88
+55    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+55-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:41:5-92
+55-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:41:22-89
+56    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+56-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:42:5-93
+56-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:42:22-90
+57    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+57-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:43:5-73
+57-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:43:22-70
+58    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+58-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:44:5-82
+58-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:44:22-79
+59    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+59-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:45:5-83
+59-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:45:22-80
+60    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+60-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:46:5-88
+60-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:46:22-85
+61    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+61-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:47:5-89
+61-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:47:22-86
+62
+63    <uses-feature
+63-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+64        android:glEsVersion="0x00020000"
+64-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+65        android:required="true" />
+65-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+66
+67    <queries>
+67-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+68
+69        <!-- Needs to be explicitly declared on Android R+ -->
+70        <package android:name="com.google.android.apps.maps" />
+70-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+70-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+71    </queries>
+72
+73    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+73-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:28:5-77
+73-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:28:22-74
+74    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+74-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\150d95ff2179d66a1b5aeef5973627bb\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+74-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\150d95ff2179d66a1b5aeef5973627bb\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+75
+76    <application
+76-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:6:5-39:19
+77        android:name="com.ebookingham.rn.MainApplication"
+77-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:7:7-38
+78        android:allowBackup="false"
+78-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:11:7-34
+79        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+79-->[androidx.core:core:1.6.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\67ff0aaf930f65024e6c37d99bc9e852\core-1.6.0\AndroidManifest.xml:24:18-86
+80        android:icon="@mipmap/ic_launcher"
+80-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:9:7-41
+81        android:label="@string/app_name"
+81-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:8:7-39
+82        android:networkSecurityConfig="@xml/network_security_config"
+82-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:12:7-67
+83        android:roundIcon="@mipmap/ic_launcher_round"
+83-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:10:7-52
+84        android:theme="@style/AppTheme"
+84-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:14:7-38
+85        android:usesCleartextTraffic="true" >
+85-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:13:7-42
+86        <meta-data
+86-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:15:7-17:64
+87            android:name="com.google.android.geo.API_KEY"
+87-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:16:7-52
+88            android:value="AIzaSyBiS0b4wnwsu7EQ2OQyNuZbyUkBuWWf1sM" />
+88-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:17:7-62
+89
+90        <activity
+90-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:18:7-29:18
+91            android:name="com.ebookingham.rn.MainActivity"
+91-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:19:9-37
+92            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+92-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:21:9-86
+93            android:exported="true"
+93-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:23:9-32
+94            android:label="@string/app_name"
+94-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:20:9-41
+95            android:launchMode="singleTask"
+95-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:22:9-40
+96            android:windowSoftInputMode="adjustPan" >
+96-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:24:9-48
+97
+98            <!-- <intent-filter> -->
+99            <!-- <action android:name="android.intent.action.MAIN" /> -->
+100            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+101            <!-- </intent-filter> -->
+102        </activity>
+103        <activity
+103-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:30:9-38:20
+104            android:name="com.zoontek.rnbootsplash.RNBootSplashActivity"
+104-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:31:13-73
+105            android:launchMode="singleTask"
+105-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:33:13-44
+106            android:theme="@style/BootTheme" >
+106-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:32:13-45
+107            <intent-filter>
+107-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:34:13-37:29
+108                <action android:name="android.intent.action.MAIN" />
+108-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:35:17-69
+108-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:35:25-66
+109
+110                <category android:name="android.intent.category.LAUNCHER" />
+110-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:36:17-77
+110-->D:\ReactNativeProjeccts\ebookingham\android\app\src\main\AndroidManifest.xml:36:27-74
+111            </intent-filter>
+112        </activity>
+113
+114        <provider
+114-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:9-18:20
+115            android:name="cl.json.RNShareFileProvider"
+115-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:13-55
+116            android:authorities="com.ebookingham.rn.rnshare.fileprovider"
+116-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:13-72
+117            android:exported="false"
+117-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-37
+118            android:grantUriPermissions="true" >
+118-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-47
+119            <meta-data
+119-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-17:64
+120                android:name="android.support.FILE_PROVIDER_PATHS"
+120-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:17-67
+121                android:resource="@xml/share_download_paths" />
+121-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:17-61
+122        </provider>
+123        <provider
+123-->[:react-native-webview] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-20:20
+124            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+124-->[:react-native-webview] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-83
+125            android:authorities="com.ebookingham.rn.fileprovider"
+125-->[:react-native-webview] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-64
+126            android:exported="false"
+126-->[:react-native-webview] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+127            android:grantUriPermissions="true" >
+127-->[:react-native-webview] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
+128            <meta-data
+128-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-17:64
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:17-67
+130                android:resource="@xml/file_provider_paths" />
+130-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:17-61
+131        </provider>
+132        <provider
+132-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:9-44:20
+133            android:name="com.RNFetchBlob.Utils.FileProvider"
+133-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-62
+134            android:authorities="com.ebookingham.rn.provider"
+134-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-60
+135            android:exported="false"
+135-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-37
+136            android:grantUriPermissions="true" >
+136-->[:rn-fetch-blob] D:\ReactNativeProjeccts\ebookingham\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-47
+137            <meta-data
+137-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-17:64
+138                android:name="android.support.FILE_PROVIDER_PATHS"
+138-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:17-67
+139                android:resource="@xml/provider_paths" />
+139-->[:react-native-share] D:\ReactNativeProjeccts\ebookingham\node_modules\react-native-share\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:17-61
+140        </provider>
+141
+142        <receiver
+142-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:50:9-61:20
+143            android:name="com.onesignal.FCMBroadcastReceiver"
+143-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:51:13-62
+144            android:exported="true"
+144-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:52:13-36
+145            android:permission="com.google.android.c2dm.permission.SEND" >
+145-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:53:13-73
+146
+147            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+148            <intent-filter android:priority="999" >
+148-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:56:13-60:29
+148-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:56:28-50
+149                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+149-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:57:17-81
+149-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:57:25-78
+150
+151                <category android:name="com.ebookingham.rn" />
+151-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:59:17-61
+151-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:59:27-58
+152            </intent-filter>
+153        </receiver>
+154
+155        <service
+155-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:63:9-69:19
+156            android:name="com.onesignal.HmsMessageServiceOneSignal"
+156-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:64:13-68
+157            android:exported="false" >
+157-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:65:13-37
+158            <intent-filter>
+158-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:66:13-68:29
+159                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+159-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:67:17-81
+159-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:67:25-78
+160            </intent-filter>
+161        </service>
+162
+163        <activity
+163-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:71:9-79:20
+164            android:name="com.onesignal.NotificationOpenedActivityHMS"
+164-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:72:13-71
+165            android:exported="true"
+165-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:73:13-36
+166            android:noHistory="true"
+166-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:74:13-37
+167            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+167-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:75:13-72
+168            <intent-filter>
+168-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:76:13-78:29
+169                <action android:name="android.intent.action.VIEW" />
+169-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:77:17-69
+169-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:77:25-66
+170            </intent-filter>
+171        </activity>
+172
+173        <service
+173-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:81:9-83:40
+174            android:name="com.onesignal.FCMIntentService"
+174-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:82:13-58
+175            android:exported="false" />
+175-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:83:13-37
+176        <service
+176-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:84:9-87:72
+177            android:name="com.onesignal.FCMIntentJobService"
+177-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:85:13-61
+178            android:exported="false"
+178-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:86:13-37
+179            android:permission="android.permission.BIND_JOB_SERVICE" />
+179-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:87:13-69
+180        <service
+180-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:88:9-91:43
+181            android:name="com.onesignal.SyncService"
+181-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:89:13-53
+182            android:exported="false"
+182-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:90:13-37
+183            android:stopWithTask="true" />
+183-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:91:13-40
+184        <service
+184-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:92:9-95:72
+185            android:name="com.onesignal.SyncJobService"
+185-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:93:13-56
+186            android:exported="false"
+186-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:94:13-37
+187            android:permission="android.permission.BIND_JOB_SERVICE" />
+187-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:95:13-69
+188
+189        <activity
+189-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:97:9-100:75
+190            android:name="com.onesignal.PermissionsActivity"
+190-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:98:13-61
+191            android:exported="false"
+191-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:99:13-37
+192            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+192-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:100:13-72
+193
+194        <receiver
+194-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:102:9-104:39
+195            android:name="com.onesignal.NotificationDismissReceiver"
+195-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:103:13-69
+196            android:exported="true" />
+196-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:104:13-36
+197        <receiver
+197-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:105:9-112:20
+198            android:name="com.onesignal.BootUpReceiver"
+198-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:106:13-56
+199            android:exported="true" >
+199-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:107:13-36
+200            <intent-filter>
+200-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:108:13-111:29
+201                <action android:name="android.intent.action.BOOT_COMPLETED" />
+201-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:109:17-79
+201-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:109:25-76
+202                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+202-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:110:17-82
+202-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:110:25-79
+203            </intent-filter>
+204        </receiver>
+205        <receiver
+205-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:113:9-119:20
+206            android:name="com.onesignal.UpgradeReceiver"
+206-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:114:13-57
+207            android:exported="true" >
+207-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:115:13-36
+208            <intent-filter>
+208-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:116:13-118:29
+209                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+209-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:117:17-84
+209-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:117:25-81
+210            </intent-filter>
+211        </receiver>
+212
+213        <activity
+213-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:121:9-127:75
+214            android:name="com.onesignal.NotificationOpenedReceiver"
+214-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:122:13-68
+215            android:excludeFromRecents="true"
+215-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:123:13-46
+216            android:exported="true"
+216-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:124:13-36
+217            android:noHistory="true"
+217-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:125:13-37
+218            android:taskAffinity=""
+218-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:126:13-36
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+219-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:127:13-72
+220        <activity
+220-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:128:9-133:75
+221            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+221-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:129:13-85
+222            android:excludeFromRecents="true"
+222-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:130:13-46
+223            android:exported="true"
+223-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:131:13-36
+224            android:noHistory="true"
+224-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:132:13-37
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
+225-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:133:13-72
+226        <uses-library
+226-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+227            android:name="org.apache.http.legacy"
+227-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+228            android:required="false" />
+228-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\802eb9b69141fca295bdc2e69faea79b\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+229        <!--
+230             FirebaseMessagingService performs security checks at runtime,
+231             but set to not exported to explicitly avoid allowing another app to call it.
+232        -->
+233        <service
+233-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:28:9-34:19
+234            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+234-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:29:13-82
+235            android:exported="false" >
+235-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:30:13-37
+236            <intent-filter android:priority="-500" >
+236-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:13-33:29
+236-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:28-51
+237                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+237-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:17-78
+237-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\54067411734e0e02578ed4a67dd598a5\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:25-75
+238            </intent-filter>
+239        </service>
+240        <service
+240-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:29:9-35:19
+241            android:name="com.google.firebase.components.ComponentDiscoveryService"
+241-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:30:13-84
+242            android:exported="false" >
+242-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:31:13-37
+243            <meta-data
+243-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+244                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+244-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+245                android:value="com.google.firebase.components.ComponentRegistrar" />
+245-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+246        </service>
+247
+248        <receiver
+248-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+249            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+249-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+250            android:exported="true"
+250-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+251            android:permission="com.google.android.c2dm.permission.SEND" >
+251-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+252            <intent-filter>
+252-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e7b14feb9805e57e0bab368868c95e6\jetified-firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+253                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+253-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:57:17-81
+253-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:57:25-78
+254            </intent-filter>
+255        </receiver>
+256
+257        <activity
+257-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\bfd39e9a3b1f6f23566b6c29230ff20b\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+258            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+258-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\bfd39e9a3b1f6f23566b6c29230ff20b\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+259            android:exported="false"
+259-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\bfd39e9a3b1f6f23566b6c29230ff20b\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+260            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+260-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\bfd39e9a3b1f6f23566b6c29230ff20b\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+261
+262        <provider
+262-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:31:9-37:35
+263            android:name="androidx.work.impl.WorkManagerInitializer"
+263-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:32:13-69
+264            android:authorities="com.ebookingham.rn.workmanager-init"
+264-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:33:13-68
+265            android:directBootAware="false"
+265-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:34:13-44
+266            android:exported="false"
+266-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:35:13-37
+267            android:multiprocess="true" />
+267-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:36:13-40
+268
+269        <service
+269-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:39:9-44:35
+270            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+270-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:40:13-88
+271            android:directBootAware="false"
+271-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:41:13-44
+272            android:enabled="@bool/enable_system_alarm_service_default"
+272-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:42:13-72
+273            android:exported="false" />
+273-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:43:13-37
+274        <service
+274-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:45:9-51:35
+275            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+275-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:46:13-84
+276            android:directBootAware="false"
+276-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:47:13-44
+277            android:enabled="@bool/enable_system_job_service_default"
+277-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:48:13-70
+278            android:exported="true"
+278-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:49:13-36
+279            android:permission="android.permission.BIND_JOB_SERVICE" />
+279-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:50:13-69
+280        <service
+280-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:52:9-57:35
+281            android:name="androidx.work.impl.foreground.SystemForegroundService"
+281-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:53:13-81
+282            android:directBootAware="false"
+282-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:54:13-44
+283            android:enabled="@bool/enable_system_foreground_service_default"
+283-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:55:13-77
+284            android:exported="false" />
+284-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:56:13-37
+285
+286        <receiver
+286-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:59:9-64:35
+287            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+287-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:60:13-88
+288            android:directBootAware="false"
+288-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:61:13-44
+289            android:enabled="true"
+289-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:62:13-35
+290            android:exported="false" />
+290-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:63:13-37
+291        <receiver
+291-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:65:9-75:20
+292            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+292-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:66:13-106
+293            android:directBootAware="false"
+293-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:67:13-44
+294            android:enabled="false"
+294-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:68:13-36
+295            android:exported="false" >
+295-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:69:13-37
+296            <intent-filter>
+296-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:71:13-74:29
+297                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+297-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:72:17-87
+297-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:72:25-84
+298                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+298-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:73:17-90
+298-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:73:25-87
+299            </intent-filter>
+300        </receiver>
+301        <receiver
+301-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:76:9-86:20
+302            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+302-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:77:13-104
+303            android:directBootAware="false"
+303-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:78:13-44
+304            android:enabled="false"
+304-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:79:13-36
+305            android:exported="false" >
+305-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:80:13-37
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:82:13-85:29
+307                <action android:name="android.intent.action.BATTERY_OKAY" />
+307-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:83:17-77
+307-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:83:25-74
+308                <action android:name="android.intent.action.BATTERY_LOW" />
+308-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:84:17-76
+308-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:84:25-73
+309            </intent-filter>
+310        </receiver>
+311        <receiver
+311-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:87:9-97:20
+312            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+312-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:88:13-104
+313            android:directBootAware="false"
+313-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:89:13-44
+314            android:enabled="false"
+314-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:90:13-36
+315            android:exported="false" >
+315-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:91:13-37
+316            <intent-filter>
+316-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:93:13-96:29
+317                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+317-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:94:17-83
+317-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:94:25-80
+318                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+318-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:95:17-82
+318-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:95:25-79
+319            </intent-filter>
+320        </receiver>
+321        <receiver
+321-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:98:9-107:20
+322            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+322-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:99:13-103
+323            android:directBootAware="false"
+323-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:100:13-44
+324            android:enabled="false"
+324-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:101:13-36
+325            android:exported="false" >
+325-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:102:13-37
+326            <intent-filter>
+326-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:104:13-106:29
+327                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+327-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:105:17-79
+327-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:105:25-76
+328            </intent-filter>
+329        </receiver>
+330        <receiver
+330-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:108:9-119:20
+331            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+331-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:109:13-88
+332            android:directBootAware="false"
+332-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:110:13-44
+333            android:enabled="false"
+333-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:111:13-36
+334            android:exported="false" >
+334-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:112:13-37
+335            <intent-filter>
+335-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:114:13-118:29
+336                <action android:name="android.intent.action.BOOT_COMPLETED" />
+336-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:109:17-79
+336-->[com.onesignal:OneSignal:4.8.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\1d41cca19eb03d87ed875a19c820870a\jetified-OneSignal-4.8.2\AndroidManifest.xml:109:25-76
+337                <action android:name="android.intent.action.TIME_SET" />
+337-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:116:17-73
+337-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:116:25-70
+338                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+338-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:117:17-81
+338-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:117:25-78
+339            </intent-filter>
+340        </receiver>
+341        <receiver
+341-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:120:9-129:20
+342            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+342-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:121:13-99
+343            android:directBootAware="false"
+343-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:122:13-44
+344            android:enabled="@bool/enable_system_alarm_service_default"
+344-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:123:13-72
+345            android:exported="false" >
+345-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:124:13-37
+346            <intent-filter>
+346-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:126:13-128:29
+347                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+347-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:127:17-98
+347-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:127:25-95
+348            </intent-filter>
+349        </receiver>
+350        <receiver
+350-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:130:9-140:20
+351            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+351-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:131:13-78
+352            android:directBootAware="false"
+352-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:132:13-44
+353            android:enabled="true"
+353-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:133:13-35
+354            android:exported="true"
+354-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:134:13-36
+355            android:permission="android.permission.DUMP" >
+355-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:135:13-57
+356            <intent-filter>
+356-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:137:13-139:29
+357                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+357-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:138:17-88
+357-->[androidx.work:work-runtime:2.5.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\721523a7e9751d061a4a71720e7cc0ac\work-runtime-2.5.0\AndroidManifest.xml:138:25-85
+358            </intent-filter>
+359        </receiver>
+360
+361        <provider
+361-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8db6691df6ebdff0e1f73475ec492c7\jetified-firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+362            android:name="com.google.firebase.provider.FirebaseInitProvider"
+362-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8db6691df6ebdff0e1f73475ec492c7\jetified-firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+363            android:authorities="com.ebookingham.rn.firebaseinitprovider"
+363-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8db6691df6ebdff0e1f73475ec492c7\jetified-firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+364            android:exported="false"
+364-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8db6691df6ebdff0e1f73475ec492c7\jetified-firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+365            android:initOrder="100" />
+365-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\d8db6691df6ebdff0e1f73475ec492c7\jetified-firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+366
+367        <meta-data
+367-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\29fc634f8c235f2c4c0ed672b2dbd882\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+368            android:name="com.google.android.gms.version"
+368-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\29fc634f8c235f2c4c0ed672b2dbd882\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+369            android:value="@integer/google_play_services_version" />
+369-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\29fc634f8c235f2c4c0ed672b2dbd882\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+370
+371        <service
+371-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\caf3d46b46f1042c90eb5f9f15e51c09\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+372            android:name="androidx.room.MultiInstanceInvalidationService"
+372-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\caf3d46b46f1042c90eb5f9f15e51c09\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+373            android:directBootAware="true"
+373-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\caf3d46b46f1042c90eb5f9f15e51c09\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+374            android:exported="false" />
+374-->[androidx.room:room-runtime:2.2.5] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\caf3d46b46f1042c90eb5f9f15e51c09\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+375    </application>
+376
+377</manifest>

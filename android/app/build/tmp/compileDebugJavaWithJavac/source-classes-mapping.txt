@@ -1,0 +1,14 @@
+com/ebookingham/rn/BuildConfig.java
+ com.ebookingham.rn.BuildConfig
+com/bookingcore/rn/MainActivity.java
+ com.ebookingham.rn.MainActivity
+com/bookingcore/rn/ReactNativeFlipper.java
+ com.ebookingham.rn.ReactNativeFlipper
+ com.ebookingham.rn.ReactNativeFlipper$1
+ com.ebookingham.rn.ReactNativeFlipper$2
+ com.ebookingham.rn.ReactNativeFlipper$2$1
+com/bookingcore/rn/MainApplication.java
+ com.ebookingham.rn.MainApplication
+ com.ebookingham.rn.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
